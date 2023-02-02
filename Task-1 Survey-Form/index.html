@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+
+        <div class="ImageDiv">
+            <img src="./Resource-Images/Layer_7-removebg-preview.png" id="Client" alt="client">
+        </div>
+        <div class="FormDiv">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="./Resource-Images/logo.png" id="logo" alt="logo">
+            <p id="Quote1">Get a FREE</p>
+            <p id="Quote2">consultation with an expert</p>
+            <form>
+                <div id="inp">
+                    <input type="email" placeholder="Enter your email" name="" id="email">
+                    <h4 id="emailError"></h4>
+                    <p id="emailValidation"></p>
+                </div>
+
+                <div id="inp1">
+                    <input type="tel" placeholder="Enter mobile number" name="" id="phone" value="">
+                    <h4 id="mobileError"></h4>
+                    <p id="mobileLength"></p>
+                </div>
+
+                <button type="submit">TALK TO US <i class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./scripts/index.js"></script>
+
+</html>

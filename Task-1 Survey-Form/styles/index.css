@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+}
+.mainDiv{
+    display: flex;
+    width: 100%;
+}
+.ImageDiv{
+    background-image: url("../Resource-Images/Vector_Smart_Object-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-y: 50px;
+    background-position-x: 30px;
+    /* border: 2px solid black; */
+    width: 50%;
+}
+
+.ImageDiv > img{
+    width: 425px;
+    margin-top: 1%;
+    margin-left: 17%;
+}
+.FormDiv{
+    /* border: 1px solid black; */
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.FormDiv > img{
+    /* border: 1px solid black; */
+    margin-top: 7%;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Quote1{
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: -50px;
+}
+#Quote2{
+    font-size: 40px;
+    margin-top: -130px;
+}
+input{
+    margin-top: 10px;
+    padding: 13px;
+    width: 502px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+::-webkit-input-placeholder{
+    color: #000;
+    font-size: 16px;
+}
+#phone{
+    width: 530px;
+}
+input:focus{
+    outline: none;
+}
+form{
+    /* border: 1px solid black; */
+    margin-top: -60px;
+}
+button{
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    border-radius: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fa-xmark{
+    /* border: 1px solid black; */
+    font-size: 40px;
+    color: hsl(0,0%,25%);
+    position: absolute;
+    left: 96.5%;
+    top: 4px;
+    cursor: pointer;
+}
+#inp{
+    position: relative;
+}
+#inp1{
+    position: relative;
+}
+h4{
+    position: absolute;
+    z-index: 1;
+    color: rgb(242, 73, 73);
+    top: 1px;
+    left: 80%;
+}
+#mobileError{
+    margin-top: 10px;
+}
+#mobileLength{
+    color: rgb(242, 73, 73);
+}
+
+
+
+@media only screen and (max-width:425px){
+    body{
+        margin: 0;
+    }
+    .mainDiv{
+        display: block;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .ImageDiv{
+        background-image: url("../Resource-Images/Vector_Smart_Object-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position-x: center;
+        width: 100%;
+        background-color: hsl(0,0%,96%);
+    }
+    
+    .ImageDiv > img{
+        width: 225px;
+        margin-top: 30px;
+        margin-left: 26%;
+    }
+    .FormDiv{
+        /* border: 1px solid black; */
+        width: 100%;
+        /* display: none; */
+        place-items: center;
+    }
+    .FormDiv > img{
+        /* border: 1px solid black; */
+         width: 250px;
+         margin-top: 20px;
+    }
+    #Quote1{
+        font-size: 34px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    #Quote2{
+        font-size: 24px;
+        margin-top: -25px;
+    }
+    form{
+        display: grid;
+        place-items: center;
+        /* border: 1px solid black; */
+    }
+    input{
+        /* display: none; */
+        padding: 13px;
+        width: 302px;
+        border: 1px solid black;
+        color: black;
+        margin-top: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+       width: 330px;
+       border-radius: 0px;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: #000;
+        font-size: 16px;
+    }
+    #phone{
+        width: 330px;
+    }
+    h4{
+        position: absolute;
+        z-index: 1;
+        color: rgb(242, 73, 73);
+        top: 50px;
+        left: 70%;
+    }
+    #mobileError{
+        margin-top: -38px;
+    }
+    #mobileLength{
+        color: rgb(242, 73, 73);
+        text-align: center;
+    }
+    
+    .fa-xmark{
+        /* border: 1px solid black; */
+        font-size: 40px;
+        color: hsl(0,0%,25%);
+        position: absolute;
+        left: 88.5%;
+        top: 4px;
+        display: none;
+    }
+}
+@media only screen and (min-width:426px) and (max-width:768px){
+    body{
+        margin: 0;
+    }
+    .mainDiv{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid black; */
+        margin-top: 50px;
+    }
+    .ImageDiv{
+        background-image: url("../Resource-Images/Vector_Smart_Object-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position-x: center;
+        width: 100%;
+        /* background-color: hsl(0,0%,96%); */
+    }
+    
+    .ImageDiv > img{
+        width: 225px;
+        margin-top: 30px;
+        margin-left: 9%;
+    }
+    .FormDiv{
+        /* border: 1px solid black; */
+        width: 100%;
+        /* display: none; */
+        place-items: center;
+    }
+    .FormDiv > img{
+        /* border: 1px solid black; */
+         width: 190px;
+         margin-top: 20px;
+    }
+    #Quote1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    #Quote2{
+        font-size: 18px;
+        margin-top: -25px;
+    }
+    form{
+        display: grid;
+        place-items: center;
+        /* border: 1px solid black; */
+    }
+    input{
+        /* display: none; */
+        padding: 10px;
+        width: 279px;
+        border: 1px solid black;
+        color: black;
+        margin-top: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+       width: 302px;
+       border-radius: 0px;
+       padding: 10px;
+       font-size: 15px;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: #000;
+        font-size: 16px;
+    }
+    #phone{
+        width: 300px;
+    }
+
+    .fa-xmark{
+        /* border: 1px solid black; */
+        font-size: 40px;
+        color: hsl(0,0%,25%);
+        position: absolute;
+        left: 92.5%;
+        top: 40px;
+        display: none;
+    }
+    h4{
+        position: absolute;
+        z-index: 1;
+        color: rgb(242, 73, 73);
+        top: 50px;
+        left: 70%;
+        font-size: 14px;
+    }
+    #mobileError{
+        margin-top: -38px;
+    }
+    #mobileLength{
+        color: rgb(242, 73, 73);
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    body{
+        margin: 0;
+    }
+    .mainDiv{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .ImageDiv{
+        background-image: url("./Resource-Images/Vector_Smart_Object-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: 320px;
+        background-position-x: center;
+        width: 100%;
+        /* background-color: hsl(0,0%,96%); */
+    }
+    
+    .ImageDiv > img{
+        width: 275px;
+        margin-top: 30px;
+        margin-left: 9%;
+    }
+    .FormDiv{
+        /* border: 1px solid black; */
+        width: 100%;
+        /* display: none; */
+        place-items: center;
+    }
+    .FormDiv > img{
+        /* border: 1px solid black; */
+         width: 250px;
+         margin-top: 40px;
+    }
+    #Quote1{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    #Quote2{
+        font-size: 24px;
+        margin-top: -25px;
+    }
+    form{
+        display: grid;
+        place-items: center;
+        /* border: 1px solid black; */
+    }
+    input{
+        /* display: none; */
+        padding: 10px;
+        width: 289px;
+        border: 1px solid black;
+        color: black;
+        margin-top: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+       width: 310px;
+       border-radius: 0px;
+       padding: 10px;
+       font-size: 15px;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: #000;
+        font-size: 16px;
+    }
+    #phone{
+        width: 310px;
+    }
+    .fa-xmark{
+        /* border: 1px solid black; */
+        font-size: 40px;
+        color: hsl(0,0%,25%);
+        position: absolute;
+        left: 94.5%;
+        top: 4px;
+        display: none;
+    }
+}

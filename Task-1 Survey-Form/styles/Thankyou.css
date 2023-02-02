@@ -1,0 +1,44 @@
+body{
+    display: grid;
+    place-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#msg{
+    font-size: 26px;
+    text-align: center;
+}
+#email{
+    font-size: 26px;
+}
+#mobile{
+    margin-top: -10px;
+    font-size: 24px;
+}
+#img{
+    margin-top: 20px;
+    width: 250px;
+}
+@media only screen and (max-width:425px){
+    body{
+    display: grid;
+    place-items: center;
+}
+#msg{
+    font-size: 22px;
+    
+    text-align: center;
+}
+#email{
+    font-size: 22px;
+    
+}
+#mobile{
+    margin-top: -10px;
+    font-size: 20px;
+    
+}
+#img{
+    margin-top: 20px;
+    width: 250px;
+}
+}

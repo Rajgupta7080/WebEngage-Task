@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nunjucks Assignment</title>
+</head>
+
+<body>
+    <h1 style='text-align:center'>Nunjucks Queries</h1>
+  <main>
+      <h1>Ques.1 If Id is even print its respective name, username, email else print "I'm Odd"</h1>
+    {% for item in user %}
+    {% if item.id % 2 == 0 %}
+    <div id="box">
+   <p>Name: {{ item.name }}</p> 
+   <p> Username: {{ item.username }}</p> 
+   <p>Email: {{ item.email }}</p>
+    {% else %}
+   <li style="color:red">I'm Odd</li>
+    {% endif %}
+</div>
+ {% endfor %}
+ <h1>Ques 2. From the shared sapmle data of array JSON, based on all id values get its respecive
+address keys and values and print them.</h1>
+
+  {% for item in user %}
+
+
+<li>
+<b>Street:</b> {{ item.address.street }}
+    <b>Suite: </b>{{ item.address.suite }}
+    
+   <b> City:</b> {{ item.address.city }}
+   <b> Zipcode: </b>{{ item.address.zipcode }}
+   <b> Geo: </b>
+    Latitude: {{ item.address.geo.lat }}
+    Longitude: {{ item.address.geo.lng }}
+ </li>
+     {% endfor %}
+      <h1>Ques 3. If any email ends with .biz print its name with email values.</h1>
+    {% for item in user %}
+
+  {% if item.email.endsWith('.biz') %}
+  <li> Name: {{ item.name }}</li>
+  <li> Email: {{ item.email }}</li>
+   
+    {% endif %}
+   {% endfor %}
+   <h1>Ques 4. If city contains any of following "Aliyaview", "Howemouth", Gwenborough print its
+respective cityname, zipcode, Geo with lat and lang values.</h1>
+    {% for item in user %}
+
+  {% if item.address.city in ["Aliyaview", "Howemouth", "Gwenborough"] %}
+<li> "The Zipcode and Geo of cityname {{ item.address.city }} is: {{ item.address.zipcode }} and Latitude: {{
+    item.address.geo.lat }} Longitude: {{ item.address.geo.lng }}"</li>
+   
+     {% endif %}
+
+   {% endfor %}
+   <h1>Ques 5. Print CatchPhrase which will contain max 15 letters.</h1>
+     {% for item in user %}
+    <li> CatchPhrase: {{ item.company.catchPhrase.slice(0, 15) }}</li>
+   {% endfor %}
+    
+   
+</main>
+</body>
+
+</html>
