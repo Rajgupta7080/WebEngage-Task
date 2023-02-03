@@ -7,7 +7,7 @@ It is a assignment given my webEngage company. In this assignment there are 3 ta
 
 # Laptop Screen
 
-<img src="https://i.ibb.co/58hjSG9/Screenshot-58.png" alt="LaptopScreenView"/>
+<img src="https://i.ibb.co/Vj2WZZt/Screenshot-56.png"/>
 <br/>
 <br/>
 
